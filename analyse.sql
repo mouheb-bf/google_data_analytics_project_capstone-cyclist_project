@@ -16,6 +16,9 @@ end_lat,
 end_lng,
 member_casual,
 
+  
+--select hour
+extract (hour from started_at) as hour,
 
 --select day
 case extract(dayofweek from started_at)
